@@ -3,20 +3,17 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class ${ClassName}Test {
+class SolutionTest {
 
     @Test
     void test${FunctionName}() {
-        // Arrange
-        ${ClassName} solution = new ${ClassName}();
+        // Given
+        Solution solution = new Solution();
 
-        // TODO: Initialize input variables
-
-        // Act
+        // When
         var result = solution.${FunctionName}(/* input variables */);
 
-        // Assert
-        // TODO: Add assertions
+        // Then
         fail("Test not implemented");
     }
 }
