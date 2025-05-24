@@ -2,12 +2,12 @@ package com.github.kevinnowak.top_150._88_merge_sorted_array;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class SolutionTest {
 
     @Test
-    void testmerge() {
+    void testMerge() {
         // Given
         Solution solution = new Solution();
 
