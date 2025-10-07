@@ -1,7 +1,5 @@
 package com.github.kevinnowak.programming_skills._242_valid_anagram;
 
-import java.util.Arrays;
-
 class Solution {
 
     boolean isAnagram(String s, String t) {
