@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/sql-50/1148-article-views-i/solution.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/1378-replace-employee-id-with-unique-identifier/Solution.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/1378-replace-employee-id-with-unique-identifier/setup.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/1683-invalid-tweets/setup.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/1683-invalid-tweets/solution.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/1757-recyclable-and-low-fat-products/solution.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/584-find-customer-referee/solution.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/sql-50/595-big-countries/solution.sql" dialect="SQLite" />
+    <file url="PROJECT" dialect="SQLite" />
+  </component>
+</project>

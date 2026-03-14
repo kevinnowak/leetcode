@@ -3,20 +3,10 @@ package com.github.kevinnowak.top_150.array_string._28_find_index_of_first_occur
 class Solution {
 
     public int strStr(String haystack, String needle) {
-        int index = -1;
-
-        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
-            if (haystack.substring(i, i + needle.length()).equals(needle)) {
-                index = i;
-
-                break;
-            }
-        }
-
-        return index;
+        return haystack.indexOf(needle);
     }
 
-// Solution #1
+//    Solution #1
 //    public int strStr(String haystack, String needle) {
 //        for (int i = 0; i < haystack.length(); i++) {
 //            for (int j = 0; j < needle.length() && haystack.length() > i + j; j++) {
@@ -31,5 +21,20 @@ class Solution {
 //        }
 //
 //        return -1;
+//    }
+
+//    Solution #2
+//    public int strStr(String haystack, String needle) {
+//        int index = -1;
+//
+//        for (int i = 0; i <= haystack.length() - needle.length(); i++) {
+//            if (haystack.substring(i, i + needle.length()).equals(needle)) {
+//                index = i;
+//
+//                break;
+//            }
+//        }
+//
+//        return index;
 //    }
 }

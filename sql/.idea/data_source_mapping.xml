@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/sql-50/1148-article-views-i/solution.sql" value="c01902cc-532e-4f20-9e18-c0a625024545" />
+    <file url="file://$PROJECT_DIR$/sql-50/1378-replace-employee-id-with-unique-identifier/Solution.sql" value="adddac32-a2d1-410e-9682-a642d167eb48" />
+    <file url="file://$PROJECT_DIR$/sql-50/1378-replace-employee-id-with-unique-identifier/setup.sql" value="adddac32-a2d1-410e-9682-a642d167eb48" />
+    <file url="file://$PROJECT_DIR$/sql-50/1683-invalid-tweets/setup.sql" value="8f355f71-876a-41b5-af13-64f1565a666d" />
+    <file url="file://$PROJECT_DIR$/sql-50/1683-invalid-tweets/solution.sql" value="8f355f71-876a-41b5-af13-64f1565a666d" />
+    <file url="file://$PROJECT_DIR$/sql-50/1757-recyclable-and-low-fat-products/solution.sql" value="5c7dbcc7-14bd-427b-b4ed-93c65f63e84d" />
+    <file url="file://$PROJECT_DIR$/sql-50/584-find-customer-referee/solution.sql" value="ed74baf6-5975-4a5b-95e1-1448ea393f1e" />
+    <file url="file://$PROJECT_DIR$/sql-50/595-big-countries/solution.sql" value="f41cf5ec-bdb4-4422-ac2e-1b4a20c455d3" />
+  </component>
+</project>
