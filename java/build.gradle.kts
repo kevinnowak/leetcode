@@ -14,8 +14,8 @@ java {
 
 configure<com.diffplug.gradle.spotless.SpotlessExtension> {
     java {
-        target("src/*/java/**/*.java")
-        googleJavaFormat("1.19.1")
+        target("src/**/*.java")
+        googleJavaFormat("1.35.0")
         removeUnusedImports()
         trimTrailingWhitespace()
         endWithNewline()
