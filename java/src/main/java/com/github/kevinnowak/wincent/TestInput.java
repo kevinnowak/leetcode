@@ -5,30 +5,30 @@ import java.util.List;
 
 public class TestInput {
 
-    private int numberOfGames;
-    private List<Game> games;
+  private int numberOfGames;
+  private List<Game> games;
 
-    public TestInput() {
-        this.games = new ArrayList<>();
-    }
+  public TestInput() {
+    this.games = new ArrayList<>();
+  }
 
-    public boolean addGame(Game game) {
-        return games.add(game);
-    }
+  public boolean addGame(Game game) {
+    return games.add(game);
+  }
 
-    public int getNumberOfGames() {
-        return numberOfGames;
-    }
+  public int getNumberOfGames() {
+    return numberOfGames;
+  }
 
-    public void setNumberOfGames(int numberOfGames) {
-        this.numberOfGames = numberOfGames;
-    }
+  public void setNumberOfGames(int numberOfGames) {
+    this.numberOfGames = numberOfGames;
+  }
 
-    public List<Game> getGames() {
-        return games;
-    }
+  public List<Game> getGames() {
+    return games;
+  }
 
-    public void setGames(List<Game> games) {
-        this.games = games;
-    }
+  public void setGames(List<Game> games) {
+    this.games = games;
+  }
 }

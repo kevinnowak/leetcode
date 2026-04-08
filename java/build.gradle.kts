@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.diffplug.spotless") version "6.25.0"
 }
 
 group = "com.github.kevinnowak"
@@ -8,6 +9,16 @@ version = "1.0-SNAPSHOT"
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+configure<com.diffplug.gradle.spotless.SpotlessExtension> {
+    java {
+        target("src/*/java/**/*.java")
+        googleJavaFormat("1.19.1")
+        removeUnusedImports()
+        trimTrailingWhitespace()
+        endWithNewline()
     }
 }
 
