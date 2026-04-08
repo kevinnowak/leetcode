@@ -9,24 +9,24 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
 
-  @ParameterizedTest
-  @MethodSource("provideParameters")
-  void testRepeatedSubstringPattern(String s, boolean expectedResult) {
-    // Given
-    Solution solution = new Solution();
+    @ParameterizedTest
+    @MethodSource("provideParameters")
+    void testRepeatedSubstringPattern(String s, boolean expectedResult) {
+        // Given
+        Solution solution = new Solution();
 
-    // When
-    var actualResult = solution.repeatedSubstringPattern(s);
+        // When
+        var actualResult = solution.repeatedSubstringPattern(s);
 
-    // Then
-    assertEquals(expectedResult, actualResult);
-  }
+        // Then
+        assertEquals(expectedResult, actualResult);
+    }
 
-  private static Stream<Arguments> provideParameters() {
-    return Stream.of(
-        Arguments.of("abab", true),
-        Arguments.of("aba", false),
-        Arguments.of("abcabcabcabc", true),
-        Arguments.of("ababab", true));
-  }
+    private static Stream<Arguments> provideParameters() {
+        return Stream.of(
+                Arguments.of("abab", true),
+                Arguments.of("aba", false),
+                Arguments.of("abcabcabcabc", true),
+                Arguments.of("ababab", true));
+    }
 }

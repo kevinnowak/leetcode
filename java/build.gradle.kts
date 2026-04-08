@@ -15,10 +15,11 @@ java {
 configure<com.diffplug.gradle.spotless.SpotlessExtension> {
     java {
         target("src/**/*.java")
-        googleJavaFormat("1.35.0")
+        googleJavaFormat("1.35.0").aosp()
         removeUnusedImports()
         trimTrailingWhitespace()
         endWithNewline()
+        indentWithSpaces(4)
     }
 }
 

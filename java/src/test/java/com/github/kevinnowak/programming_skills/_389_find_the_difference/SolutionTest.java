@@ -9,23 +9,23 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
 
-  @ParameterizedTest
-  @MethodSource("provideDataForTestFindTheDifference")
-  void testFindTheDifference(String s, String t, char expectedResult) {
-    // Given
-    Solution solution = new Solution();
+    @ParameterizedTest
+    @MethodSource("provideDataForTestFindTheDifference")
+    void testFindTheDifference(String s, String t, char expectedResult) {
+        // Given
+        Solution solution = new Solution();
 
-    // When
-    var givenResult = solution.findTheDifference(s, t);
+        // When
+        var givenResult = solution.findTheDifference(s, t);
 
-    // Then
-    assertEquals(expectedResult, givenResult);
-  }
+        // Then
+        assertEquals(expectedResult, givenResult);
+    }
 
-  private static Stream<Arguments> provideDataForTestFindTheDifference() {
-    return Stream.of(
-        Arguments.of("abcd", "abcde", "e"),
-        Arguments.of("", "y", "y"),
-        Arguments.of("a", "aa", "a"));
-  }
+    private static Stream<Arguments> provideDataForTestFindTheDifference() {
+        return Stream.of(
+                Arguments.of("abcd", "abcde", "e"),
+                Arguments.of("", "y", "y"),
+                Arguments.of("a", "aa", "a"));
+    }
 }

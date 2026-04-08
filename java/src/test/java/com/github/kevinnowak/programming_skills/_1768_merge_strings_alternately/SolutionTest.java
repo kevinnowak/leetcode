@@ -9,23 +9,23 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
 
-  @ParameterizedTest
-  @MethodSource("provideDataForTestMergeAlternately")
-  void testmergeAlternately(String word1, String word2, String expectedResult) {
-    // Given
-    Solution solution = new Solution();
+    @ParameterizedTest
+    @MethodSource("provideDataForTestMergeAlternately")
+    void testmergeAlternately(String word1, String word2, String expectedResult) {
+        // Given
+        Solution solution = new Solution();
 
-    // When
-    var actualResult = solution.mergeAlternately(word1, word2);
+        // When
+        var actualResult = solution.mergeAlternately(word1, word2);
 
-    // Then
-    assertEquals(expectedResult, actualResult);
-  }
+        // Then
+        assertEquals(expectedResult, actualResult);
+    }
 
-  private static Stream<Arguments> provideDataForTestMergeAlternately() {
-    return Stream.of(
-        Arguments.of("abc", "pqr", "apbqcr"),
-        Arguments.of("ab", "pqrs", "apbqrs"),
-        Arguments.of("abcd", "pq", "apbqcd"));
-  }
+    private static Stream<Arguments> provideDataForTestMergeAlternately() {
+        return Stream.of(
+                Arguments.of("abc", "pqr", "apbqcr"),
+                Arguments.of("ab", "pqrs", "apbqrs"),
+                Arguments.of("abcd", "pq", "apbqcd"));
+    }
 }

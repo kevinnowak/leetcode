@@ -9,20 +9,21 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
 
-  @ParameterizedTest
-  @MethodSource("provideParameters")
-  void testStrStr(String haystack, String needle, int expectedResult) {
-    // Given
-    Solution solution = new Solution();
+    @ParameterizedTest
+    @MethodSource("provideParameters")
+    void testStrStr(String haystack, String needle, int expectedResult) {
+        // Given
+        Solution solution = new Solution();
 
-    // When
-    var actualResult = solution.strStr(haystack, needle);
+        // When
+        var actualResult = solution.strStr(haystack, needle);
 
-    // Then
-    assertEquals(expectedResult, actualResult);
-  }
+        // Then
+        assertEquals(expectedResult, actualResult);
+    }
 
-  private static Stream<Arguments> provideParameters() {
-    return Stream.of(Arguments.of("sadbutsad", "sad", 0), Arguments.of("leetcode", "leeto", -1));
-  }
+    private static Stream<Arguments> provideParameters() {
+        return Stream.of(
+                Arguments.of("sadbutsad", "sad", 0), Arguments.of("leetcode", "leeto", -1));
+    }
 }

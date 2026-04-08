@@ -2,7 +2,7 @@ package com.github.kevinnowak.programming_skills._28_find_index_of_first_occuren
 
 class Solution {
 
-  int strStr(String haystack, String needle) {
-    return haystack.indexOf(needle);
-  }
+    int strStr(String haystack, String needle) {
+        return haystack.indexOf(needle);
+    }
 }

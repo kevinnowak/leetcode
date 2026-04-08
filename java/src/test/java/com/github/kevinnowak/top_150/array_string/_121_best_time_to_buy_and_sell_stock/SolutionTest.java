@@ -9,23 +9,23 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
 
-  private static Stream<Arguments> provideParameters() {
-    return Stream.of(
-        Arguments.of(new int[] {7, 1, 5, 3, 6, 4}, 5),
-        Arguments.of(new int[] {7, 6, 4, 3, 1}, 0),
-        Arguments.of(new int[] {1, 2}, 1));
-  }
+    private static Stream<Arguments> provideParameters() {
+        return Stream.of(
+                Arguments.of(new int[] {7, 1, 5, 3, 6, 4}, 5),
+                Arguments.of(new int[] {7, 6, 4, 3, 1}, 0),
+                Arguments.of(new int[] {1, 2}, 1));
+    }
 
-  @ParameterizedTest
-  @MethodSource("provideParameters")
-  void testMaxProfit(int[] prices, int expectedResult) {
-    // Given
-    Solution solution = new Solution();
+    @ParameterizedTest
+    @MethodSource("provideParameters")
+    void testMaxProfit(int[] prices, int expectedResult) {
+        // Given
+        Solution solution = new Solution();
 
-    // When
-    var actualResult = solution.maxProfit(prices);
+        // When
+        var actualResult = solution.maxProfit(prices);
 
-    // Then
-    assertEquals(expectedResult, actualResult);
-  }
+        // Then
+        assertEquals(expectedResult, actualResult);
+    }
 }
