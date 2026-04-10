@@ -11,6 +11,7 @@ class SolutionTest {
 
     private static Stream<Arguments> provideParameters() {
         return Stream.of(
+                Arguments.of(new int[] {1, 2, 3, 0, 4}, new int[] {1, 2, 3, 4, 0}),
                 Arguments.of(new int[] {0, 1, 0, 3, 12}, new int[] {1, 3, 12, 0, 0}),
                 Arguments.of(new int[] {0}, new int[] {0}));
     }
@@ -22,7 +23,7 @@ class SolutionTest {
         Solution solution = new Solution();
 
         // When
-        solution.moveZeroes(nums);
+        solution.moveZeroesFaster(nums);
 
         // Then
         assertArrayEquals(expectedResult, nums);
