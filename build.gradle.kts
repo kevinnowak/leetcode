@@ -3,7 +3,7 @@ plugins {
     id("com.diffplug.spotless") version "6.25.0"
 }
 
-group = "com.github.kevinnowak"
+group = "com.github.kevinnowak.maven"
 version = "1.0-SNAPSHOT"
 
 java {
